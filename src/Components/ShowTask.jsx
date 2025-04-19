@@ -1,6 +1,5 @@
 import DeleteIcon from '@mui/icons-material/Delete';
 import IconButton from '@mui/material/IconButton';
-import {pink} from '@mui/material/colors';
 import Checkbox from '@mui/material/Checkbox';
 import Button from "@mui/material/Button";
 import DoneAllIcon from '@mui/icons-material/DoneAll';
@@ -61,7 +60,7 @@ export default function ShowTask({currTask, deleteItem, doneTask, doneAll, allDe
             <ul style={{marginTop:'2rem',paddingBottom:'1.8rem'}}>
                 {currTask.map((item)=>(
                     <li key={item.id} style={{fontSize:'1.2rem',color:'#f7931a', lineHeight:'2.5rem', textTransform:'capitalize', fontWeight:'600'}} >
-                        <span style={(item.isDone)?{textDecorationThickness:'4px',textDecorationColor:'black',textDecorationLine:'line-through'}:{}}>{item.task}</span>
+                        <span style={(item.isDone)?{textDecorationThickness:'2px',textDecorationColor:'lightgrey',textDecorationLine:'line-through'}:{}}>{item.task}</span>
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <Checkbox
                             {...label}
