@@ -3,6 +3,7 @@ import AddIcon from '@mui/icons-material/Add';
 import Button from '@mui/material/Button';
 import {useState} from "react";
 import {v4 as uuidv4} from "uuid";
+import './components.css';
 
 export default function EnterTask({task}){
     let [entry, SetEntry] = useState('');

@@ -1,6 +1,7 @@
 import EnterTask from "./EnterTask.jsx";
 import ShowTask from "./ShowTask.jsx";
 import {useState} from "react";
+import './components.css';
 
 export default function TodoApp(){
     let [currentTask, setCurrentTask] = useState([]);
@@ -90,8 +91,9 @@ export default function TodoApp(){
 
     return (
         <>
-            <div className='todo-container' style={{ fontFamily:'Roboto', minHeight:'300px',minWidth:'480px', maxWidth:'90%', border:'none', borderRadius:'10px', borderTopLeftRadius:'80px', borderBottomRightRadius:'80px',boxShadow: '3px 3px 10px #4491b3', background:'#020609'}}>
-                <h2 style={{fontSize:'2.5rem', lineHeight:'2.5rem', letterSpacing:'1px', color: '#8062f6', paddingTop:'1.4rem',marginBottom:'1rem'}}>Todo App</h2>
+            <div id='todoApp-container' style={{ fontFamily:'Roboto', minHeight:'300px',minWidth:'480px', maxWidth:'90%', border:'none', borderRadius:'10px', borderTopLeftRadius:'80px', borderBottomRightRadius:'80px',boxShadow: '3px 3px 10px #4491b3', background:'#020609'}}>
+
+                <h2 id='todoApp-h2-heading'>Todo App</h2>
 
                 <EnterTask task={getTask} />
                 <ShowTask currTask={currentTask} deleteItem={deleteItem} doneTask={doneTask} doneAll={doneAll2} allDelete={deleteAll} />

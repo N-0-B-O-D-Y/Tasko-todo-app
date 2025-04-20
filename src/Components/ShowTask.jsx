@@ -3,6 +3,7 @@ import IconButton from '@mui/material/IconButton';
 import Checkbox from '@mui/material/Checkbox';
 import Button from "@mui/material/Button";
 import DoneAllIcon from '@mui/icons-material/DoneAll';
+import './components.css';
 // import {useState} from "react";
 
 export default function ShowTask({currTask, deleteItem, doneTask, doneAll, allDelete}) {
